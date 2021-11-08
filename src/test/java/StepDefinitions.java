@@ -12,12 +12,6 @@ public class StepDefinitions {
         o.setOwner(who);
     }
 
-    @Given("{word} who wants to create an Order")
-    public void creating_an_order(String who) {
-        o = new Order();
-        o.setOwner(who);
-    }
-
     @When("{word} is declared as recipient")
     public void declaring_recipient(String who){
         o.setRecipient(who);
